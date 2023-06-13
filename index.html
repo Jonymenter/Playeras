@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!--Esto es para que el titulo de la pestaña se mueva-->
+			<script src="https://kit.fontawesome.com/e00b108020.js"></script>
+			<script language="JavaScript">
+				var TituloFC = "Playera      ";
+				var espera = 350;
+				var tiempobarrido = null;
+				function despliegue_title() {
+				document.title = TituloFC;
+				TituloFC = TituloFC.substring(1,TituloFC.length) + TituloFC.charAt(0);
+				tiempobarrido = setTimeout("despliegue_title()",espera);
+											}
+				despliegue_title();
+			</script>
+			<script>
+				function NewWindow(mypage, myname, w, h, scroll)
+				{
+				var winl = (screen.width - w) / 2;
+				var wint = (screen.height - h) / 2;
+				winprops = 'height='+h+',width='+w+',top='+wint+',left='+winl+',scrollbars='+scroll+',resizable'
+				win = window.open(mypage, myname, winprops)
+				if (parseInt(navigator.appVersion) >= 4) { win.window.focus(); }
+				}
+			</script>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Camisas</title>
+		<link rel="icon" href="logo.png">
+	</head>
+	<body>
+			<header id="header_compu">
+				<marquee id="marquee1"><font face="CollegiateFLF" id="header">Playera CDMX</font></marquee>
+			</header>
+				<section id="bcnp">
+					<div id="bcnfp" class="ventana"></div>
+					<a href="Fisica.glb"><video src="playera.mp4" width="505" height="505" autoplay muted loop></video></a>
+					<h1>Dar Click a la Imagen para Descargar Modelo 3D</h1>
+					<h1 id="descripcion"><font face="CollegiateFLF">Descripcion</font></h1>
+					<p>Esta es la playera de la CDMX que esta compuesta por:</p>
+					<li class="c1">Nombre del Estado</li>
+					<li class="c2">Nombre del Concurso</li>
+					<li class="c3">Logo del Concurso</li>
+					<li class="c4">Colores del Concurso y de la Bandera Mexicana</li>
+					<li class="c5">Como Personalidad Cuenta con Imagenes de la Descomposicion de la Luz</li>
+					<li class="c6">En el Frente Esta el Nombre del Concurso y el Calendario Maya</li>
+					<a href="1.png" target="_blank"><button class="ibcn1"></button></a>
+					<a href="2.png" target="_blank"><button class="ibcn2"></button></a>
+					<a href="3.png" target="_blank"><button class="ibcn3"></button></a>
+					<a href="4.png" target="_blank"><button class="ibcn4"></button></a>
+					<a href="5.png" target="_blank"><button class="ibcn5"></button></a>
+					<button onclick="menu()" id="regresar"></button>
+				</section>
+	</body>
+	<script>
+	function abrirbcn()
+	{
+	document.getElementById('bcnp').style.display = 'block';
+	document.getElementById('regresar').style.display = 'block';
+	document.getElementById('inicio').style.display = 'none';
+	}
+	</script>
+	<div>
+	<style>
+		*{
+			padding: 0px;
+		}
+		body{
+			background: black;
+		}
+		h1{
+			color: white;
+			position: absolute;
+			margin-top: 540px;
+			margin-left: 1em;
+			font-size: 1.44em;
+			background-color: black;
+		}
+		li{
+			position: absolute;
+			color: white;
+			background: rgba(0, 0, 0, .9);
+			font-size: 1.2em;
+			margin-left: 42%;
+		}
+		p{
+			position: absolute;
+			color: white;
+			margin-top: 4.1em;
+			margin-left: 42%;
+			font-size: 1.3em;
+			background: rgba(0, 0, 0, .9);
+		}
+		video{
+			position: absolute;
+			margin: 1.1em;
+			margin-top: 1.2em;
+			border-color: grey;
+			border-style: outset;
+			border-width: .35em;
+		}
+		#regresar{
+			background: url(regresar.png);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			width: 10%;
+			height: 7.9%;
+			border: transparent;
+			position: absolute;
+			cursor: pointer;
+		}
+		#inicio{
+			width: 100%;
+			height: 590px;
+		}
+		/*Version Computadora*/
+		/*Primarios*/
+		#compu{
+			padding: 0px;
+			background: url(fondo2.png);
+			background-size: 100%;
+			height: 720px;
+		}
+		#marquee1{
+			background: repeating-linear-gradient(#025801, #fff, #A4000E);
+			color: #242424;
+			border: .1em;
+			border-color: rgb(0, 255, 0);
+			border-style: double;
+			font-size: 6em;
+		}
+		#descripcion{
+			width: 54%;
+			color: red;
+			background: transparent;
+			margin-top: .5em;
+			margin-left: 42%;
+			font-size: 2.5em;
+			border-style: double;
+			border-width: 0px;
+			border-bottom-width: 5px;
+			text-align: center;
+		}
+		.c1{
+			margin-top: 6em;
+		}
+		.c2{
+			margin-top: 7.15em;
+		}
+		.c3{
+			margin-top: 8.29em;
+		}
+		.c4{
+			margin-top: 9.4em;
+		}
+		.c5{
+			margin-top: 10.58em;
+		}
+		.c6{
+			margin-top: 11.7em;
+		}
+		#bcn{
+			color: transparent;
+			background: url(cdmxf.png);
+			background-size: 100%;
+		}
+		#bcnfp{
+			background: url(cdmxf.png);
+			background-size: 100%;
+			background-position: center;
+			opacity: .8;
+		}
+		.estados_compu{
+			margin: .3%;
+			width: 24.2526655%;
+			height: 31%;
+			border-color: white;
+			border-radius: 1em;
+			border-width: .5em;
+		}
+		.estados_compu2{
+			margin-right: .3%;
+			margin-top: .3%;
+			margin-bottom: .3%;
+			width: 24.2526655%;
+			height: 31%;
+			border-color: white;
+			border-radius: 1em;
+			border-width: .5em;
+		}
+		.ventana{
+			position: absolute;
+			width: 99%;
+			height: 590px;
+		}
+		#bcn:hover{
+			background: rgba(0, 255, 0, .8);
+			border-color: white;
+			color: black;
+			cursor: pointer;
+		}
+		body::-webkit-scrollbar{
+			width: 14px;
+			background: linear-gradient(#B70301,#A70100,#490100,#A70100,#B70301);
+		}
+		body::-webkit-scrollbar-thumb{
+			background: linear-gradient(#E2DDDD,#454545,#242424,#353535,#525252);
+			border-radius: 5px;
+			height: 2em;
+		}
+	</style>
+</div>		
+<div>
+		<style>
+			.ibcn1{
+				background: url(1.png);
+				background-color: #999;
+				background-size: 65%;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				margin-left: 42%;
+				margin-top: 260px;
+				width: 13.9%;
+				height: 22%;
+				cursor: pointer;
+			}
+			.ibcn2{
+				background: url(2.png);
+				background-color: #999;
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				margin-left: 56%;
+				margin-top: 260px;
+				width: 13.9%;
+				height: 22%;
+				cursor: pointer;
+			}
+			.ibcn3{
+				background: url(3.png);
+				background-color: #999;
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				margin-left: 70%;
+				margin-top: 260px;
+				width: 13.9%;
+				height: 22%;
+				cursor: pointer;
+			}
+			.ibcn4{
+				background: url(4.png);
+				background-color: #999;
+				background-size: 70%;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				margin-left: 84%;
+				margin-top: 260px;
+				width: 13.9%;
+				height: 22%;
+				cursor: pointer;
+			}
+			.ibcn5{
+				background: url(5.png);
+				background-color: #999;
+				background-size: 100%;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				margin-left: 42%;
+				margin-top: 400px;
+				width: 13.9%;
+				height: 22%;
+				cursor: pointer;
+			}
+			.ibcn1:hover{
+				background: url(1.png);
+				background-color: #333;
+				background-size: 80%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			.ibcn2:hover{
+				background: url(2.png);
+				background-color: #333;
+				background-size: 120%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			.ibcn3:hover{
+				background: url(3.png);
+				background-color: #333;
+				background-size: 120%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			.ibcn4:hover{
+				background: url(4.png);
+				background-color: #333;
+				background-size: 120%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}
+			.ibcn5:hover{
+				background: url(5.png);
+				background-color: #333;
+				background-size: 110%;
+				background-position: center;
+				background-repeat: no-repeat;
+				cursor: pointer;
+			}	
+		</style>
+	</div>
